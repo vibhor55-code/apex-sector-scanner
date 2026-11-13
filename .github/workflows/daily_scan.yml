@@ -2,9 +2,11 @@ name: Daily NSE Full-Market Scanner
 
 on:
   schedule:
-    # 4:00 PM IST is 10:30 AM UTC (Runs Monday to Friday)
     - cron: '30 10 * * 1-5'
-  workflow_dispatch: # Adds a manual "Run workflow" button so you can test anytime
+  workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   run-scanner:
@@ -29,3 +31,10 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python scanner.py
+
+      - name: Publish Live Web Dashboard to GitHub Pages
+        run: |
+          git config --global user.name "Apex Scanner Bot"
+          git config --global user.email "actions@github.com"
+          git add index.html
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update live dashboard" && git push)
