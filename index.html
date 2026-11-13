@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apex Master Techno-Funda Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen p-4 md:p-8">
+  <div class="max-w-7xl mx-auto">
+    <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-6 border-b border-slate-800 pb-4">
+      <div>
+        <h1 class="text-2xl md:text-3xl font-bold text-white">🏛️ Apex Master Techno-Funda Dashboard</h1>
+        <p class="text-slate-400 text-sm mt-1">Full-Market NSE 500 Stage-2 Consolidation Breakouts • Updated: 13 Nov 2026</p>
+      </div>
+      <div class="mt-3 md:mt-0 bg-slate-900 border border-slate-800 rounded-lg px-4 py-2 text-sm">
+        <div><b>Regime:</b> 🟡 SELECTIVE / ROTATION (0.5% Risk)</div>
+        <div class="text-slate-400"><b>NSE 500 Breadth (>40W EMA):</b> 49.4%</div>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
+      <div class="bg-slate-900 border border-slate-800 rounded-xl p-5 lg:col-span-1">
+        <h2 class="text-lg font-bold mb-4 text-emerald-400">🔥 Top Sector Clusters Waking Up</h2>
+        
+        <div class="mb-3">
+          <div class="flex justify-between text-sm mb-1">
+            <span class="font-semibold text-slate-200">Financial Services</span>
+            <span class="text-emerald-400 font-mono">10/98 stocks (10.2%)</span>
+          </div>
+          <div class="w-full bg-slate-800 rounded-full h-2.5">
+            <div class="bg-emerald-500 h-2.5 rounded-full" style="width: 25.5%"></div>
+          </div>
+        </div>
+        <div class="mb-3">
+          <div class="flex justify-between text-sm mb-1">
+            <span class="font-semibold text-slate-200">Healthcare</span>
+            <span class="text-emerald-400 font-mono">4/44 stocks (9.1%)</span>
+          </div>
+          <div class="w-full bg-slate-800 rounded-full h-2.5">
+            <div class="bg-emerald-500 h-2.5 rounded-full" style="width: 22.75%"></div>
+          </div>
+        </div>
+        <div class="mb-3">
+          <div class="flex justify-between text-sm mb-1">
+            <span class="font-semibold text-slate-200">Automobile and Auto Components</span>
+            <span class="text-emerald-400 font-mono">3/40 stocks (7.5%)</span>
+          </div>
+          <div class="w-full bg-slate-800 rounded-full h-2.5">
+            <div class="bg-emerald-500 h-2.5 rounded-full" style="width: 18.75%"></div>
+          </div>
+        </div>
+        <div class="mb-3">
+          <div class="flex justify-between text-sm mb-1">
+            <span class="font-semibold text-slate-200">Telecommunication</span>
+            <span class="text-emerald-400 font-mono">2/11 stocks (18.2%)</span>
+          </div>
+          <div class="w-full bg-slate-800 rounded-full h-2.5">
+            <div class="bg-emerald-500 h-2.5 rounded-full" style="width: 45.5%"></div>
+          </div>
+        </div>
+        <div class="mb-3">
+          <div class="flex justify-between text-sm mb-1">
+            <span class="font-semibold text-slate-200">Realty</span>
+            <span class="text-emerald-400 font-mono">2/14 stocks (14.3%)</span>
+          </div>
+          <div class="w-full bg-slate-800 rounded-full h-2.5">
+            <div class="bg-emerald-500 h-2.5 rounded-full" style="width: 35.75%"></div>
+          </div>
+        </div>
+        <div class="mb-3">
+          <div class="flex justify-between text-sm mb-1">
+            <span class="font-semibold text-slate-200">Capital Goods</span>
+            <span class="text-emerald-400 font-mono">2/70 stocks (2.9%)</span>
+          </div>
+          <div class="w-full bg-slate-800 rounded-full h-2.5">
+            <div class="bg-emerald-500 h-2.5 rounded-full" style="width: 7.25%"></div>
+          </div>
+        </div>
+        <div class="mb-3">
+          <div class="flex justify-between text-sm mb-1">
+            <span class="font-semibold text-slate-200">Services</span>
+            <span class="text-emerald-400 font-mono">1/14 stocks (7.1%)</span>
+          </div>
+          <div class="w-full bg-slate-800 rounded-full h-2.5">
+            <div class="bg-emerald-500 h-2.5 rounded-full" style="width: 17.75%"></div>
+          </div>
+        </div>
+        <div class="mb-3">
+          <div class="flex justify-between text-sm mb-1">
+            <span class="font-semibold text-slate-200">Oil Gas &amp; Consumable Fuels</span>
+            <span class="text-emerald-400 font-mono">1/19 stocks (5.3%)</span>
+          </div>
+          <div class="w-full bg-slate-800 rounded-full h-2.5">
+            <div class="bg-emerald-500 h-2.5 rounded-full" style="width: 13.25%"></div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-slate-900 border border-slate-800 rounded-xl p-5 lg:col-span-2">
+        <h2 class="text-lg font-bold mb-4 text-amber-400">🧮 Quick 1% Risk Position Sizer</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div>
+            <label class="text-xs text-slate-400">Trading Capital (₹)</label>
+            <input id="cap" type="number" value="1000000" oninput="calc()" class="w-full mt-1 bg-slate-800 border border-slate-700 rounded p-2 text-white">
+          </div>
+          <div>
+            <label class="text-xs text-slate-400">Entry Price (₹)</label>
+            <input id="entry" type="number" value="1447" oninput="calc()" class="w-full mt-1 bg-slate-800 border border-slate-700 rounded p-2 text-white">
+          </div>
+          <div>
+            <label class="text-xs text-slate-400">Stop-Loss Price (₹)</label>
+            <input id="sl" type="number" value="1314" oninput="calc()" class="w-full mt-1 bg-slate-800 border border-slate-700 rounded p-2 text-white">
+          </div>
+        </div>
+        <div id="res" class="mt-4 p-3 bg-slate-950 rounded border border-slate-800 text-sm font-mono text-emerald-400"></div>
+      </div>
+    </div>
+
+    <div class="bg-slate-900 border border-slate-800 rounded-xl p-5 overflow-x-auto">
+      <h2 class="text-lg font-bold mb-4 text-sky-400">📈 Actionable Stage-2 Breakouts (Ranked by Funda + RS)</h2>
+      <table class="w-full text-left border-collapse">
+        <thead>
+          <tr class="border-b border-slate-700 text-xs uppercase text-slate-400">
+            <th class="p-3">Symbol</th>
+            <th class="p-3">Sector</th>
+            <th class="p-3">RS</th>
+            <th class="p-3">CMP</th>
+            <th class="p-3">Stop-Loss</th>
+            <th class="p-3">Qty (1% Risk)</th>
+            <th class="p-3">Vol</th>
+            <th class="p-3">Fundamentals</th>
+            <th class="p-3">Links</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+        <tr class="border-b border-slate-800 hover:bg-slate-800/60">
+          <td class="p-3 font-bold text-white">MOTILALOFS <span class="text-xs px-2 py-0.5 rounded bg-slate-700 text-amber-300">📦Base</span></td>
+          <td class="p-3 text-slate-300 text-sm">Financial Services</td>
+          <td class="p-3 font-mono text-emerald-400 font-bold">96</td>
+          <td class="p-3 font-mono">₹1220.0</td>
+          <td class="p-3 font-mono text-rose-400">₹1093.0 (10.4%)</td>
+          <td class="p-3 font-mono font-bold text-amber-300">39</td>
+          <td class="p-3 font-mono">3.4x</td>
+          <td class="p-3 text-xs text-slate-300">🟢 A+ LEADER | Sales:+68% PAT:+196% ROE:19% PE:29.2</td>
+          <td class="p-3 text-sm">
+            <a href="https://in.tradingview.com/chart/?symbol=NSE:MOTILALOFS" target="_blank" class="text-sky-400 hover:underline mr-2">Chart</a>
+            <a href="https://www.screener.in/company/MOTILALOFS/consolidated/" target="_blank" class="text-indigo-400 hover:underline">Screener</a>
+          </td>
+        </tr>
+        <tr class="border-b border-slate-800 hover:bg-slate-800/60">
+          <td class="p-3 font-bold text-white">SHYAMMETL <span class="text-xs px-2 py-0.5 rounded bg-slate-700 text-amber-300">📦Base</span></td>
+          <td class="p-3 text-slate-300 text-sm">Capital Goods</td>
+          <td class="p-3 font-mono text-emerald-400 font-bold">96</td>
+          <td class="p-3 font-mono">₹1315.9</td>
+          <td class="p-3 font-mono text-rose-400">₹1203.1 (8.6%)</td>
+          <td class="p-3 font-mono font-bold text-amber-300">44</td>
+          <td class="p-3 font-mono">2.3x</td>
+          <td class="p-3 text-xs text-slate-300">🟢 A+ LEADER | Sales:+34% PAT:+96% ROE:11% PE:26.6</td>
+          <td class="p-3 text-sm">
+            <a href="https://in.tradingview.com/chart/?symbol=NSE:SHYAMMETL" target="_blank" class="text-sky-400 hover:underline mr-2">Chart</a>
+            <a href="https://www.screener.in/company/SHYAMMETL/consolidated/" target="_blank" class="text-indigo-400 hover:underline">Screener</a>
+          </td>
+        </tr>
+        <tr class="border-b border-slate-800 hover:bg-slate-800/60">
+          <td class="p-3 font-bold text-white">EMCURE <span class="text-xs px-2 py-0.5 rounded bg-slate-700 text-amber-300">📦Base</span></td>
+          <td class="p-3 text-slate-300 text-sm">Healthcare</td>
+          <td class="p-3 font-mono text-emerald-400 font-bold">95</td>
+          <td class="p-3 font-mono">₹2361.7</td>
+          <td class="p-3 font-mono text-rose-400">₹2142.1 (9.3%)</td>
+          <td class="p-3 font-mono font-bold text-amber-300">22</td>
+          <td class="p-3 font-mono">3.4x</td>
+          <td class="p-3 text-xs text-slate-300">🟢 A+ LEADER | Sales:+24% PAT:+33% ROE:21% PE:41.0</td>
+          <td class="p-3 text-sm">
+            <a href="https://in.tradingview.com/chart/?symbol=NSE:EMCURE" target="_blank" class="text-sky-400 hover:underline mr-2">Chart</a>
+            <a href="https://www.screener.in/company/EMCURE/consolidated/" target="_blank" class="text-indigo-400 hover:underline">Screener</a>
+          </td>
+        </tr>
+        <tr class="border-b border-slate-800 hover:bg-slate-800/60">
+          <td class="p-3 font-bold text-white">NAVINFLUOR <span class="text-xs px-2 py-0.5 rounded bg-slate-700 text-amber-300">📦Base</span></td>
+          <td class="p-3 text-slate-300 text-sm">Chemicals</td>
+          <td class="p-3 font-mono text-emerald-400 font-bold">95</td>
+          <td class="p-3 font-mono">₹10002.0</td>
+          <td class="p-3 font-mono text-rose-400">₹9088.4 (9.1%)</td>
+          <td class="p-3 font-mono font-bold text-amber-300">5</td>
+          <td class="p-3 font-mono">2.8x</td>
+          <td class="p-3 text-xs text-slate-300">🟢 A+ LEADER | Sales:+57% PAT:+81% ROE:23% PE:56.4</td>
+          <td class="p-3 text-sm">
+            <a href="https://in.tradingview.com/chart/?symbol=NSE:NAVINFLUOR" target="_blank" class="text-sky-400 hover:underline mr-2">Chart</a>
+            <a href="https://www.screener.in/company/NAVINFLUOR/consolidated/" target="_blank" class="text-indigo-400 hover:underline">Screener</a>
+          </td>
+        </tr>
+        <tr class="border-b border-slate-800 hover:bg-slate-800/60">
+          <td class="p-3 font-bold text-white">ASAHIINDIA <span class="text-xs px-2 py-0.5 rounded bg-slate-700 text-amber-300">📦Base</span></td>
+          <td class="p-3 text-slate-300 text-sm">Automobile and Auto Components</td>
+          <td class="p-3 font-mono text-emerald-400 font-bold">93</td>
+          <td class="p-3 font-mono">₹1110.2</td>
+          <td class="p-3 font-mono text-rose-400">₹1018.0 (8.3%)</td>
+          <td class="p-3 font-mono font-bold text-amber-300">54</td>
+          <td class="p-3 font-mono">1.5x</td>
+          <td class="p-3 text-xs text-slate-300">🟢 A+ LEADER | Sales:+38% PAT:+196% ROE:14% PE:51.6</td>
+          <td class="p-3 text-sm">
+            <a href="https://in.tradingview.com/chart/?symbol=NSE:ASAHIINDIA" target="_blank" class="text-sky-400 hover:underline mr-2">Chart</a>
+            <a href="https://www.screener.in/company/ASAHIINDIA/consolidated/" target="_blank" class="text-indigo-400 hover:underline">Screener</a>
+          </td>
+        </tr>
+        <tr class="border-b border-slate-800 hover:bg-slate-800/60">
+          <td class="p-3 font-bold text-white">UNOMINDA <span class="text-xs px-2 py-0.5 rounded bg-slate-700 text-amber-300">📦Base</span></td>
+          <td class="p-3 text-slate-300 text-sm">Automobile and Auto Components</td>
+          <td class="p-3 font-mono text-emerald-400 font-bold">91</td>
+          <td class="p-3 font-mono">₹1388.0</td>
+          <td class="p-3 font-mono text-rose-400">₹1268.9 (8.6%)</td>
+          <td class="p-3 font-mono font-bold text-amber-300">41</td>
+          <td class="p-3 font-mono">2.6x</td>
+          <td class="p-3 text-xs text-slate-300">🟢 A+ LEADER | Sales:+38% PAT:+38% ROE:19% PE:60.9</td>
+          <td class="p-3 text-sm">
+            <a href="https://in.tradingview.com/chart/?symbol=NSE:UNOMINDA" target="_blank" class="text-sky-400 hover:underline mr-2">Chart</a>
+            <a href="https://www.screener.in/company/UNOMINDA/consolidated/" target="_blank" class="text-indigo-400 hover:underline">Screener</a>
+          </td>
+        </tr>
+        <tr class="border-b border-slate-800 hover:bg-slate-800/60">
+          <td class="p-3 font-bold text-white">ICICIBANK <span class="text-xs px-2 py-0.5 rounded bg-slate-700 text-amber-300">⚡VCP</span></td>
+          <td class="p-3 text-slate-300 text-sm">Financial Services</td>
+          <td class="p-3 font-mono text-emerald-400 font-bold">90</td>
+          <td class="p-3 font-mono">₹1583.6</td>
+          <td class="p-3 font-mono text-rose-400">₹1497.4 (5.4%)</td>
+          <td class="p-3 font-mono font-bold text-amber-300">57</td>
+          <td class="p-3 font-mono">2.7x</td>
+          <td class="p-3 text-xs text-slate-300">🟢 A+ LEADER | Sales:+16% PAT:+22% ROE:16% PE:19.4</td>
+          <td class="p-3 text-sm">
+            <a href="https://in.tradingview.com/chart/?symbol=NSE:ICICIBANK" target="_blank" class="text-sky-400 hover:underline mr-2">Chart</a>
+            <a href="https://www.screener.in/company/ICICIBANK/consolidated/" target="_blank" class="text-indigo-400 hover:underline">Screener</a>
+          </td>
+        </tr>
+        <tr class="border-b border-slate-800 hover:bg-slate-800/60">
+          <td class="p-3 font-bold text-white">HONASA <span class="text-xs px-2 py-0.5 rounded bg-slate-700 text-amber-300">📦Base</span></td>
+          <td class="p-3 text-slate-300 text-sm">Fast Moving Consumer Goods</td>
+          <td class="p-3 font-mono text-emerald-400 font-bold">89</td>
+          <td class="p-3 font-mono">₹502.0</td>
+          <td class="p-3 font-mono text-rose-400">₹462.5 (7.9%)</td>
+          <td class="p-3 font-mono font-bold text-amber-300">126</td>
+          <td class="p-3 font-mono">5.9x</td>
+          <td class="p-3 text-xs text-slate-300">🟢 A+ LEADER | Sales:+36% PAT:+86% ROE:21% PE:58.0</td>
+          <td class="p-3 text-sm">
+            <a href="https://in.tradingview.com/chart/?symbol=NSE:HONASA" target="_blank" class="text-sky-400 hover:underline mr-2">Chart</a>
+            <a href="https://www.screener.in/company/HONASA/consolidated/" target="_blank" class="text-indigo-400 hover:underline">Screener</a>
+          </td>
+        </tr>
+        <tr class="border-b border-slate-800 hover:bg-slate-800/60">
+          <td class="p-3 font-bold text-white">MCX <span class="text-xs px-2 py-0.5 rounded bg-slate-700 text-amber-300">📦Base</span></td>
+          <td class="p-3 text-slate-300 text-sm">Financial Services</td>
+          <td class="p-3 font-mono text-emerald-400 font-bold">89</td>
+          <td class="p-3 font-mono">₹3720.0</td>
+          <td class="p-3 font-mono text-rose-400">₹3380.5 (9.1%)</td>
+          <td class="p-3 font-mono font-bold text-amber-300">14</td>
+          <td class="p-3 font-mono">1.9x</td>
+          <td class="p-3 text-xs text-slate-300">🟢 A+ LEADER | Sales:+112% PAT:+130% ROE:44% PE:64.2</td>
+          <td class="p-3 text-sm">
+            <a href="https://in.tradingview.com/chart/?symbol=NSE:MCX" target="_blank" class="text-sky-400 hover:underline mr-2">Chart</a>
+            <a href="https://www.screener.in/company/MCX/consolidated/" target="_blank" class="text-indigo-400 hover:underline">Screener</a>
+          </td>
+        </tr>
+        <tr class="border-b border-slate-800 hover:bg-slate-800/60">
+          <td class="p-3 font-bold text-white">ANGELONE <span class="text-xs px-2 py-0.5 rounded bg-slate-700 text-amber-300">📦Base</span></td>
+          <td class="p-3 text-slate-300 text-sm">Financial Services</td>
+          <td class="p-3 font-mono text-emerald-400 font-bold">87</td>
+          <td class="p-3 font-mono">₹349.0</td>
+          <td class="p-3 font-mono text-rose-400">₹320.0 (8.3%)</td>
+          <td class="p-3 font-mono font-bold text-amber-300">172</td>
+          <td class="p-3 font-mono">1.9x</td>
+          <td class="p-3 text-xs text-slate-300">🟢 A+ LEADER | Sales:+15% PAT:+57% ROE:18% PE:28.2</td>
+          <td class="p-3 text-sm">
+            <a href="https://in.tradingview.com/chart/?symbol=NSE:ANGELONE" target="_blank" class="text-sky-400 hover:underline mr-2">Chart</a>
+            <a href="https://www.screener.in/company/ANGELONE/consolidated/" target="_blank" class="text-indigo-400 hover:underline">Screener</a>
+          </td>
+        </tr>
+        <tr class="border-b border-slate-800 hover:bg-slate-800/60">
+          <td class="p-3 font-bold text-white">PNB <span class="text-xs px-2 py-0.5 rounded bg-slate-700 text-amber-300">⚡VCP</span></td>
+          <td class="p-3 text-slate-300 text-sm">Financial Services</td>
+          <td class="p-3 font-mono text-emerald-400 font-bold">94</td>
+          <td class="p-3 font-mono">₹142.8</td>
+          <td class="p-3 font-mono text-rose-400">₹133.5 (6.5%)</td>
+          <td class="p-3 font-mono font-bold text-amber-300">537</td>
+          <td class="p-3 font-mono">3.0x</td>
+          <td class="p-3 text-xs text-slate-300">🟢 SOLID FUNDA | Sales:+7% PAT:+15% ROE:15% PE:7.2</td>
+          <td class="p-3 text-sm">
+            <a href="https://in.tradingview.com/chart/?symbol=NSE:PNB" target="_blank" class="text-sky-400 hover:underline mr-2">Chart</a>
+            <a href="https://www.screener.in/company/PNB/consolidated/" target="_blank" class="text-indigo-400 hover:underline">Screener</a>
+          </td>
+        </tr>
+        <tr class="border-b border-slate-800 hover:bg-slate-800/60">
+          <td class="p-3 font-bold text-white">PHOENIXLTD <span class="text-xs px-2 py-0.5 rounded bg-slate-700 text-amber-300">📦Base</span></td>
+          <td class="p-3 text-slate-300 text-sm">Realty</td>
+          <td class="p-3 font-mono text-emerald-400 font-bold">92</td>
+          <td class="p-3 font-mono">₹2255.0</td>
+          <td class="p-3 font-mono text-rose-400">₹2077.9 (7.9%)</td>
+          <td class="p-3 font-mono font-bold text-amber-300">28</td>
+          <td class="p-3 font-mono">1.6x</td>
+          <td class="p-3 text-xs text-slate-300">⚪ MODERATE | Sales:+3% PAT:+7% ROE:13% PE:61.8</td>
+          <td class="p-3 text-sm">
+            <a href="https://in.tradingview.com/chart/?symbol=NSE:PHOENIXLTD" target="_blank" class="text-sky-400 hover:underline mr-2">Chart</a>
+            <a href="https://www.screener.in/company/PHOENIXLTD/consolidated/" target="_blank" class="text-indigo-400 hover:underline">Screener</a>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <script>
+    function calc() {
+      const cap = parseFloat(document.getElementById('cap').value) || 0;
+      const entry = parseFloat(document.getElementById('entry').value) || 0;
+      const sl = parseFloat(document.getElementById('sl').value) || 0;
+      const risk = cap * 0.01;
+      const diff = entry - sl;
+      if (diff <= 0 || entry <= 0) {
+        document.getElementById('res').innerText = "Stop-Loss must be below Entry Price.";
+        return;
+      }
+      const qty = Math.min(Math.floor(risk / diff), Math.floor((cap * 0.20) / entry));
+      document.getElementById('res').innerText = `Buy Qty: ${qty} shares | Total Allocation: ₹${(qty * entry).toLocaleString('en-IN')} | Max Loss (1%): ₹${risk.toLocaleString('en-IN')}`;
+    }
+    calc();
+  </script>
+</body>
+</html>
